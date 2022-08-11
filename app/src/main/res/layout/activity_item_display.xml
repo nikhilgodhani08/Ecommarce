@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    tools:context=".item_display">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/dis_prd_tname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/product_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_30sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dis_prd_img"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="@dimen/_230sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/item_img"
+            android:padding="@dimen/_5sdp"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dis_prd_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/product_name"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/brand"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dis_prd_bname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:text="@string/niks"
+                    android:textSize="@dimen/_15sdp"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dis_prd_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="@string/product_detail"
+                android:textColor="#000000"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/backpack_capacity"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dis_prd_capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingStart="@dimen/_4sdp"
+                    android:text="@string/_8_liters"
+                    android:textSize="@dimen/_15sdp"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/dis_prd_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/_60_50"
+            android:textColor="#000000"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAddToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custom_cartbtn"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/add_to_cart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            tools:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

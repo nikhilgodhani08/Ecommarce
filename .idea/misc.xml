@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/drawable/cuatom_mapbox.xml" value="0.2115" />
+        <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/drawable/custom_radiobtn.xml" value="0.2115" />
+        <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/activity_add_product_detail.xml" value="0.25" />
+        <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/activity_admindisplay.xml" value="0.25" />
+        <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/activity_payment.xml" value="0.22" />
+        <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/activity_success.xml" value="0.17074275362318841" />
+        <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/cart_item.xml" value="0.25" />
+        <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/custom_toast.xml" value="0.25" />
+        <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/fragment_addtocartfrag.xml" value="0.25" />
+        <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/fragment_homefrag.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

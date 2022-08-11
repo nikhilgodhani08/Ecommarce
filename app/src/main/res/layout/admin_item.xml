@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgcolor"
+
+    android:layout_margin="@dimen/_5sdp"
+    android:elevation="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bgcolor"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/admin_prd_img"
+            android:layout_width="@dimen/_83sdp"
+            android:layout_height="@dimen/_83sdp"
+            android:background="@drawable/item_img"
+            android:padding="@dimen/_5sdp"
+            android:scaleType="fitCenter"
+            android:src="#000000"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/admin_prd_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/product_name"
+                android:textColor="#000000"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/brand"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/admin_prd_bname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/niks"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/_12sdp"
+                    android:paddingStart="@dimen/_4sdp"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/admin_prd_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_14sdp"
+                android:text="@string/_60_50"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"
+                />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+
+            >
+
+            <ImageView
+                android:id="@+id/btndelete"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_baseline_delete_24"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

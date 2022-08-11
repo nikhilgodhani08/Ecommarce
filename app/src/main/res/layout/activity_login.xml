@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/log_in"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_36sdp" />
+
+        <EditText
+            android:id="@+id/edtLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/custom_editbox"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="@string/email_address"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/_15sdp" />
+
+        <EditText
+            android:id="@+id/edtLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:autofillHints="password"
+            android:background="@drawable/custom_editbox"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="@string/enter_password"
+            android:inputType="numberPassword"
+            android:textSize="@dimen/_15sdp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/btn_press"
+            android:fontFamily="@font/roboto_black"
+            android:padding="@dimen/_17sdp"
+            android:text="@string/log_in"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        tools:ignore="UselessLeaf"
+        tools:layout_editor_absoluteX="42dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/don_t_have_an_account"
+            android:textSize="@dimen/_17sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtLoginRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/register"
+            android:textColor="@drawable/txt_click"
+            android:textSize="@dimen/_17sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/btn_press"
+            android:fontFamily="@font/roboto_black"
+            android:padding="@dimen/_17sdp"
+            android:text="@string/admin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/bgcolor"
+    tools:context=".addProductDetail">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_90sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAddProduct"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/productimg" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtAddImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/add_product"
+                android:textColor="@drawable/txt_click"
+                android:textSize="@dimen/_17sdp" />
+
+            <EditText
+                android:id="@+id/edtAddProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_32sdp"
+                android:background="@drawable/custom_editbox"
+                android:hint="@string/enter_product_name"
+                android:inputType="text"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/edtAddBrandName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/custom_editbox"
+                android:hint="@string/enter_product_brand"
+                android:inputType="text"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/edtAddProductCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/custom_editbox"
+                android:hint="@string/enter_backpack_capacity"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/edtAddProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/custom_editbox"
+                android:hint="@string/enter_product_price"
+                android:inputType="number"
+                android:textSize="@dimen/_15sdp" />
+
+            <EditText
+                android:id="@+id/edtAddProductDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/custom_editbox"
+                android:hint="@string/enter_product_detail"
+                android:inputType="textLongMessage"
+                android:textSize="@dimen/_15sdp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPublish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_47sdp"
+                android:background="@drawable/btn_press"
+                android:fontFamily="@font/roboto_black"
+                android:padding="@dimen/_17sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:text="@string/publish"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15sdp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

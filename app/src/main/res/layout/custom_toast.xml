@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_toast_layout"
+    android:padding="@dimen/_10sdp"
+    app:circularflow_defaultRadius="@dimen/_65sdp"
+    android:orientation="vertical"
+    android:background="@drawable/toast">
+
+    <ImageView
+        android:id="@+id/custom_toast_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/custom_toast_image"
+        android:src="@drawable/ic_baseline_check_24" />
+
+    <TextView
+        android:id="@+id/custom_toast_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_toEndOf="@+id/custom_toast_image"
+        android:text="@string/added_to_cart" />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context=".addtocartfrag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".addtocartfrag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/subtotal"
+            android:textColor="#000000"
+            android:textSize="@dimen/_21sdp" />
+
+        <TextView
+            android:id="@+id/txt_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="@dimen/_5sdp"
+            android:text="@string/_60_50"
+            android:textColor="#000000"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnProcessToBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/btn_press"
+        android:fontFamily="@font/roboto_black"
+        android:padding="@dimen/_17sdp"
+        android:text="@string/process_to_buy"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRcvview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_marginEnd="@dimen/_20sdp" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
