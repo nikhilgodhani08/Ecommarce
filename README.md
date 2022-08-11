@@ -19,6 +19,10 @@
 
 ![13 Pro - 1](https://user-images.githubusercontent.com/84656107/184072270-6e38aa43-1574-4c40-8a54-db0fb67d7aaf.png)
 
+## **Product Page**
+
+![13 Pro - 4](https://user-images.githubusercontent.com/84656107/184073169-2d7f50bf-b409-4d44-a9c7-d591201bc8f5.png)
+
 ## **User Add to cart Page**
 
 ![13 Pro - 12](https://user-images.githubusercontent.com/84656107/184072493-ac38011c-c36a-475f-b474-6f23bf69acda.png)
