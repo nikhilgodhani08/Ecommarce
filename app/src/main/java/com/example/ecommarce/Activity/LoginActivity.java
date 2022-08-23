@@ -1,4 +1,4 @@
-package com.example.ecommarce;
+package com.example.ecommarce.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.ecommarce.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -52,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
         btnAdmin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this,admindisplay.class));
+                startActivity(new Intent(LoginActivity.this, admindisplay.class));
             }
         });
 
@@ -65,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
         txtLoginRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(LoginActivity.this,RegisterActyvity.class);
+                Intent intent=new Intent(LoginActivity.this, RegisterActyvity.class);
                 startActivity(intent);
             }
         });
@@ -98,7 +99,7 @@ public class LoginActivity extends AppCompatActivity {
                 {
                     dialog.dismiss();
                     Toast.makeText(LoginActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(LoginActivity.this,MainActivity.class));
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
 
                 }else{
                     dialog.dismiss();

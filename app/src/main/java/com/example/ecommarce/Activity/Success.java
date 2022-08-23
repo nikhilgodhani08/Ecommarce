@@ -1,4 +1,4 @@
-package com.example.ecommarce;
+package com.example.ecommarce.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+
+import com.example.ecommarce.R;
 
 public class Success extends AppCompatActivity {
 
@@ -26,7 +28,7 @@ public class Success extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 finish();
-                startActivity(new Intent(Success.this,MainActivity.class));
+                startActivity(new Intent(Success.this, MainActivity.class));
             }
         });
 

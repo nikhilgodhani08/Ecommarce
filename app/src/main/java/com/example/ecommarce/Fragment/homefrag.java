@@ -1,8 +1,7 @@
-package com.example.ecommarce;
+package com.example.ecommarce.Fragment;
 
 import android.os.Bundle;
 
-import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,6 +15,9 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 
+import com.example.ecommarce.Adapter.HomeAdapter;
+import com.example.ecommarce.Util.DataModel;
+import com.example.ecommarce.R;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;

@@ -1,4 +1,4 @@
-package com.example.ecommarce;
+package com.example.ecommarce.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,12 +9,15 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.ecommarce.Util.DataModel;
+import com.example.ecommarce.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -24,6 +27,7 @@ import com.google.firebase.database.ValueEventListener;
 public class payment extends AppCompatActivity {
 
     Button btnPayNow;
+    EditText edtAddress;
     RadioButton rdbgooglepay,rdbPhonePay,rdbPaytm;
     RadioGroup rdbgroup;
     RelativeLayout layoutp1,layoutp2,layoutp3;
@@ -41,6 +45,7 @@ public class payment extends AppCompatActivity {
         layoutp1=findViewById(R.id.layoutp1);
         layoutp2=findViewById(R.id.layoutp2);
         layoutp3=findViewById(R.id.layoutp3);
+        edtAddress=findViewById(R.id.edtAddress);
         txtPaymentPrice=findViewById(R.id.txtPaymentPrice);
 
         //hide titlebar
@@ -52,7 +57,17 @@ public class payment extends AppCompatActivity {
         btnPayNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(payment.this,Success.class));
+                if(edtAddress.getText().toString().isEmpty()){
+                    edtAddress.setError("Address Required");
+                }else if(!(rdbgooglepay.isChecked() || rdbPaytm.isChecked() || rdbPhonePay.isChecked())){
+                    Toast.makeText(payment.this, "Please Select Any Payment Options", Toast.LENGTH_SHORT).show();
+
+                }
+                else {
+                    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("AddtoCart");
+                    databaseReference.removeValue();
+                    startActivity(new Intent(payment.this, Success.class));
+                }
             }
         });
 
@@ -107,7 +122,7 @@ public class payment extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(payment.this,MainActivity.class));
+        startActivity(new Intent(payment.this, MainActivity.class));
     }
     @Override
     protected void onResume() {

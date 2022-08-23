@@ -7,6 +7,7 @@
         <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/drawable/custom_radiobtn.xml" value="0.2115" />
         <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/activity_add_product_detail.xml" value="0.25" />
         <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/activity_admindisplay.xml" value="0.25" />
+        <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/activity_item_display.xml" value="0.25" />
         <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/activity_payment.xml" value="0.22" />
@@ -15,6 +16,7 @@
         <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/custom_toast.xml" value="0.25" />
         <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/fragment_addtocartfrag.xml" value="0.25" />
         <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/fragment_homefrag.xml" value="0.25" />
+        <entry key="..\:/completeproject/Android Collage Project/app/src/main/res/layout/home_item.xml" value="0.25" />
       </map>
     </option>
   </component>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:background="@color/bgcolor"
-    tools:context=".addProductDetail">
+    tools:context=".Activity.addProductDetail">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"

@@ -1,6 +1,5 @@
-package com.example.ecommarce;
+package com.example.ecommarce.Fragment;
 
-import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -15,8 +14,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.example.ecommarce.Activity.payment;
+import com.example.ecommarce.Adapter.CartAdapter;
+import com.example.ecommarce.Util.DataModel;
+import com.example.ecommarce.R;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

@@ -1,21 +1,21 @@
-package com.example.ecommarce;
+package com.example.ecommarce.Adapter;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.ecommarce.Activity.item_display;
+import com.example.ecommarce.Util.DataModel;
+import com.example.ecommarce.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
@@ -38,7 +38,7 @@ public class HomeAdapter extends FirebaseRecyclerAdapter<DataModel, HomeAdapter.
         holder.homeItemLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(holder.homePrdImg.getContext(),item_display.class);
+                Intent intent=new Intent(holder.homePrdImg.getContext(), item_display.class);
                 intent.putExtra("prd_id",getRef(position).getKey());
                 holder.homePrdImg.getContext().startActivity(intent);
             }

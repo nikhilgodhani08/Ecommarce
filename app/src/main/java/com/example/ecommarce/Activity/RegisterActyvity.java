@@ -1,4 +1,4 @@
-package com.example.ecommarce;
+package com.example.ecommarce.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.ecommarce.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -93,7 +94,7 @@ public class RegisterActyvity extends AppCompatActivity {
                         {
                             Toast.makeText(RegisterActyvity.this, "Account Created Successfully", Toast.LENGTH_SHORT).show();
                             dialog.dismiss();
-                            startActivity(new Intent(RegisterActyvity.this,MainActivity.class));
+                            startActivity(new Intent(RegisterActyvity.this, MainActivity.class));
                         }else {
                             Toast.makeText(RegisterActyvity.this, "Something Went Wrong", Toast.LENGTH_SHORT).show();
                             Log.d("RegisterError",task.getException().toString());

@@ -1,4 +1,4 @@
-package com.example.ecommarce;
+package com.example.ecommarce.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -9,6 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
+import com.example.ecommarce.Adapter.AdminAdapter;
+import com.example.ecommarce.Util.DataModel;
+import com.example.ecommarce.R;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.FirebaseDatabase;
@@ -32,7 +35,7 @@ public class admindisplay extends AppCompatActivity {
         btnAddPrd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(admindisplay.this,addProductDetail.class));
+                startActivity(new Intent(admindisplay.this, addProductDetail.class));
             }
         });
 
@@ -55,7 +58,7 @@ public class admindisplay extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(admindisplay.this,LoginActivity.class));
+        startActivity(new Intent(admindisplay.this, LoginActivity.class));
     }
 
     @Override

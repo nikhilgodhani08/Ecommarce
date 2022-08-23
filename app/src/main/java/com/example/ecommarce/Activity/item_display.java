@@ -1,11 +1,7 @@
-package com.example.ecommarce;
+package com.example.ecommarce.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.transition.Slide;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -20,17 +16,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.ecommarce.Util.DataModel;
+import com.example.ecommarce.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.transition.platform.SlideDistanceProvider;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import java.util.concurrent.TimeUnit;
 
 public class item_display extends AppCompatActivity {
 
@@ -83,7 +78,7 @@ public class item_display extends AppCompatActivity {
                 String capacity = snapshot.child("capacity").getValue().toString();
                 String price =  snapshot.child("price").getValue().toString();
                 String img = snapshot.child("pimage").getValue().toString();
-                Integer quantity=0,total=0;
+                Integer quantity=1,total=0;
 
                 Glide.with(item_display.this).load(img).into(disPrdImg);
                 disPrdName.setText(name);

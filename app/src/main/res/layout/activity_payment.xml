@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/bgcolor"
     android:orientation="vertical"
-    tools:context=".payment">
+    tools:context=".Activity.payment">
 
     <LinearLayout
         android:layout_width="match_parent"

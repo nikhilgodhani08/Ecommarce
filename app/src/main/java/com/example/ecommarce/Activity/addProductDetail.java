@@ -1,4 +1,4 @@
-package com.example.ecommarce;
+package com.example.ecommarce.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,7 +11,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
-import android.text.Editable;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -19,6 +18,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.ecommarce.Util.DataModel;
+import com.example.ecommarce.R;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
@@ -138,7 +139,7 @@ public class addProductDetail extends AppCompatActivity {
                         dialog.dismiss();
                         Toast.makeText(addProductDetail.this, "Product Publish Successfully", Toast.LENGTH_SHORT).show();
                         emptyEditText();
-                        startActivity(new Intent(addProductDetail.this,admindisplay.class));
+                        startActivity(new Intent(addProductDetail.this, admindisplay.class));
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override

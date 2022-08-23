@@ -1,4 +1,4 @@
-package com.example.ecommarce;
+package com.example.ecommarce.Adapter;
 
 import android.annotation.SuppressLint;
 
@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.ecommarce.Util.DataModel;
+import com.example.ecommarce.R;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 

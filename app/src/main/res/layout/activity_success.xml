@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center_vertical|center_horizontal"
     android:background="@color/bgcolor"
-    tools:context=".Success">
+    tools:context=".Activity.Success">
 
     <ImageView
         android:layout_width="@dimen/_225sdp"

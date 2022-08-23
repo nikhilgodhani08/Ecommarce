@@ -1,4 +1,4 @@
-package com.example.ecommarce;
+package com.example.ecommarce.Util;
 
 public class DataModel {
 
